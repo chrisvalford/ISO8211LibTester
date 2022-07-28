@@ -32,12 +32,12 @@ extension MathsView {
         }
         
         func performDivision(value1: Float, value2: Float) throws -> Float {
-            var value: Float = 0
-            do {
-                return try library.division(value1: value1, value2: value2)
-            } catch {
-                throw OperationError.divideByZero
-            }
+//            do {
+//                return try library.division(value1: value1, value2: value2)
+//            } catch {
+//                throw OperationError.divideByZero
+//            }
+            library.division(value1: value1, value2: value2)
         }
     }
 }
