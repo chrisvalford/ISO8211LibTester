@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1392E128917DA500E432E8 /* ISO8211Lib in Frameworks */ = {isa = PBXBuildFile; productRef = 2F1392E028917DA500E432E8 /* ISO8211Lib */; };
 		2FA46B2828912CDC009FA9F5 /* ISO8211LibTesterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA46B2728912CDC009FA9F5 /* ISO8211LibTesterApp.swift */; };
 		2FA46B2A28912CDC009FA9F5 /* MathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA46B2928912CDC009FA9F5 /* MathsView.swift */; };
 		2FA46B2C28912CDD009FA9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA46B2B28912CDD009FA9F5 /* Assets.xcassets */; };
@@ -14,8 +15,6 @@
 		2FA46B3A28912CDD009FA9F5 /* ISO8211LibTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA46B3928912CDD009FA9F5 /* ISO8211LibTesterTests.swift */; };
 		2FA46B4428912CDD009FA9F5 /* ISO8211LibTesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA46B4328912CDD009FA9F5 /* ISO8211LibTesterUITests.swift */; };
 		2FA46B4628912CDD009FA9F5 /* ISO8211LibTesterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA46B4528912CDD009FA9F5 /* ISO8211LibTesterUITestsLaunchTests.swift */; };
-		2FA46B5628912D0C009FA9F5 /* CppCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FA46B5428912D0C009FA9F5 /* CppCode.cpp */; };
-		2FA46B5828912ED1009FA9F5 /* CppWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2FA46B5728912ED1009FA9F5 /* CppWrapper.mm */; };
 		2FA46B5C2891398C009FA9F5 /* MathsView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA46B5B2891398C009FA9F5 /* MathsView+Observed.swift */; };
 		2FA46B5E28913D12009FA9F5 /* MathsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA46B5D28913D12009FA9F5 /* MathsButtonView.swift */; };
 /* End PBXBuildFile section */
@@ -49,11 +48,6 @@
 		2FA46B3F28912CDD009FA9F5 /* ISO8211LibTesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISO8211LibTesterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA46B4328912CDD009FA9F5 /* ISO8211LibTesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8211LibTesterUITests.swift; sourceTree = "<group>"; };
 		2FA46B4528912CDD009FA9F5 /* ISO8211LibTesterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8211LibTesterUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		2FA46B5328912D0B009FA9F5 /* ISO8211LibTester-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ISO8211LibTester-Bridging-Header.h"; sourceTree = "<group>"; };
-		2FA46B5428912D0C009FA9F5 /* CppCode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppCode.cpp; sourceTree = "<group>"; };
-		2FA46B5528912D0C009FA9F5 /* CppCode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppCode.hpp; sourceTree = "<group>"; };
-		2FA46B5728912ED1009FA9F5 /* CppWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CppWrapper.mm; sourceTree = "<group>"; };
-		2FA46B5A28912F00009FA9F5 /* CppWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppWrapper.h; sourceTree = "<group>"; };
 		2FA46B5B2891398C009FA9F5 /* MathsView+Observed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MathsView+Observed.swift"; sourceTree = "<group>"; };
 		2FA46B5D28913D12009FA9F5 /* MathsButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathsButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F1392E128917DA500E432E8 /* ISO8211Lib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +85,7 @@
 				2FA46B3828912CDD009FA9F5 /* ISO8211LibTesterTests */,
 				2FA46B4228912CDD009FA9F5 /* ISO8211LibTesterUITests */,
 				2FA46B2528912CDC009FA9F5 /* Products */,
+				2FA46B692891548F009FA9F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,13 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				2FA46B5F2891433C009FA9F5 /* Scenes */,
-				2FA46B5928912ED7009FA9F5 /* OBJC */,
-				2FA46B5228912CF1009FA9F5 /* CPP */,
 				2FA46B2728912CDC009FA9F5 /* ISO8211LibTesterApp.swift */,
 				2FA46B2B28912CDD009FA9F5 /* Assets.xcassets */,
 				2FA46B2D28912CDD009FA9F5 /* ISO8211LibTester.entitlements */,
 				2FA46B2E28912CDD009FA9F5 /* Preview Content */,
-				2FA46B5328912D0B009FA9F5 /* ISO8211LibTester-Bridging-Header.h */,
 			);
 			path = ISO8211LibTester;
 			sourceTree = "<group>";
@@ -143,24 +136,6 @@
 			path = ISO8211LibTesterUITests;
 			sourceTree = "<group>";
 		};
-		2FA46B5228912CF1009FA9F5 /* CPP */ = {
-			isa = PBXGroup;
-			children = (
-				2FA46B5428912D0C009FA9F5 /* CppCode.cpp */,
-				2FA46B5528912D0C009FA9F5 /* CppCode.hpp */,
-			);
-			path = CPP;
-			sourceTree = "<group>";
-		};
-		2FA46B5928912ED7009FA9F5 /* OBJC */ = {
-			isa = PBXGroup;
-			children = (
-				2FA46B5728912ED1009FA9F5 /* CppWrapper.mm */,
-				2FA46B5A28912F00009FA9F5 /* CppWrapper.h */,
-			);
-			path = OBJC;
-			sourceTree = "<group>";
-		};
 		2FA46B5F2891433C009FA9F5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +154,13 @@
 			path = MathsView;
 			sourceTree = "<group>";
 		};
+		2FA46B692891548F009FA9F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,6 +177,9 @@
 			dependencies = (
 			);
 			name = ISO8211LibTester;
+			packageProductDependencies = (
+				2F1392E028917DA500E432E8 /* ISO8211Lib */,
+			);
 			productName = ISO8211LibTester;
 			productReference = 2FA46B2428912CDC009FA9F5 /* ISO8211LibTester.app */;
 			productType = "com.apple.product-type.application";
@@ -268,6 +253,9 @@
 				Base,
 			);
 			mainGroup = 2FA46B1B28912CDC009FA9F5;
+			packageReferences = (
+				2F1392DF28917DA500E432E8 /* XCRemoteSwiftPackageReference "ISO8211Lib" */,
+			);
 			productRefGroup = 2FA46B2528912CDC009FA9F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -311,11 +299,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FA46B5E28913D12009FA9F5 /* MathsButtonView.swift in Sources */,
-				2FA46B5628912D0C009FA9F5 /* CppCode.cpp in Sources */,
 				2FA46B5C2891398C009FA9F5 /* MathsView+Observed.swift in Sources */,
 				2FA46B2A28912CDC009FA9F5 /* MathsView.swift in Sources */,
 				2FA46B2828912CDC009FA9F5 /* ISO8211LibTesterApp.swift in Sources */,
-				2FA46B5828912ED1009FA9F5 /* CppWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +461,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -489,7 +476,8 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ISO8211LibTester/ISO8211LibTester-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -510,6 +498,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -524,7 +513,8 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ISO8211LibTester/ISO8211LibTester-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -534,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -557,6 +548,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -660,6 +652,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F1392DF28917DA500E432E8 /* XCRemoteSwiftPackageReference "ISO8211Lib" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chrisvalford/ISO8211Lib";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F1392E028917DA500E432E8 /* ISO8211Lib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F1392DF28917DA500E432E8 /* XCRemoteSwiftPackageReference "ISO8211Lib" */;
+			productName = ISO8211Lib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2FA46B1C28912CDC009FA9F5 /* Project object */;
 }
