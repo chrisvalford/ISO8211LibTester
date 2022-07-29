@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ISO8211Lib
 
 extension MathsView {
     
@@ -16,28 +17,22 @@ extension MathsView {
     /// Application logic for MathsView
     class Observed: ObservableObject {
         
+        let library = ISO8211Lib()
+        
         func performAddition(value1: Float, value2: Float) -> Float {
-            return CppWrapper().addition(value1, value2)
+            return library.addition(value1: value1, value2: value2)
         }
         
         func performSubtraction(value1: Float, value2: Float) -> Float {
-            return CppWrapper().subtraction(value1, value2)
+            return library.subtraction(value1: value1, value2: value2)
         }
         
         func performMultiplication(value1: Float, value2: Float) -> Float {
-            return CppWrapper().multiplication(value1, value2)
+            return library.multiplication(value1: value1, value2: value2)
         }
         
         func performDivision(value1: Float, value2: Float) throws -> Float {
-            var value: Float = 0
-            do {
-                try CppWrapper.catchException {
-                    value = CppWrapper().division(value1, value2)
-                }
-            } catch {
-                throw OperationError.divideByZero
-            }
-            return value
+           return library.division(value1: value1, value2: value2)
         }
     }
 }

@@ -12,10 +12,10 @@ struct ISO8211LibTesterApp: App {
     var body: some Scene {
         WindowGroup {
 #if os(macOS)
-            MathsView()
+            HomeTabView()
                 .frame(minWidth: 400, idealWidth: 500, maxWidth: 600, minHeight: 400, idealHeight: 500, maxHeight: 600, alignment: .center)
 #else
-            MathsView()
+            HomeTabView()
 #endif
         }
     }
