@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F1392E128917DA500E432E8 /* ISO8211Lib in Frameworks */ = {isa = PBXBuildFile; productRef = 2F1392E028917DA500E432E8 /* ISO8211Lib */; };
 		2FA46B2828912CDC009FA9F5 /* ISO8211LibTesterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA46B2728912CDC009FA9F5 /* ISO8211LibTesterApp.swift */; };
 		2FA46B2A28912CDC009FA9F5 /* MathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA46B2928912CDC009FA9F5 /* MathsView.swift */; };
 		2FA46B2C28912CDD009FA9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA46B2B28912CDD009FA9F5 /* Assets.xcassets */; };
@@ -166,7 +165,21 @@
 			sourceTree = "<group>";
 		};
 		2FA46B692891548F009FA9F5 /* Frameworks */ = {
-
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FCB90592893F63F0096E42A /* CatalogView */ = {
+			isa = PBXGroup;
+			children = (
+				2FCB905A2893F63F0096E42A /* CatalogView+Observed.swift */,
+				2FCB905B2893F63F0096E42A /* CatalogView.swift */,
+			);
+			path = CatalogView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -660,10 +673,10 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		2FCB9057289280ED0096E42A /* ISO8211Lib */ = {
 			isa = XCSwiftPackageProductDependency;
-
 			productName = ISO8211Lib;
 		};
 /* End XCSwiftPackageProductDependency section */
