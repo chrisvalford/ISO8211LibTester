@@ -17,6 +17,10 @@
 		2FA46B4628912CDD009FA9F5 /* ISO8211LibTesterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA46B4528912CDD009FA9F5 /* ISO8211LibTesterUITestsLaunchTests.swift */; };
 		2FA46B5C2891398C009FA9F5 /* MathsView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA46B5B2891398C009FA9F5 /* MathsView+Observed.swift */; };
 		2FA46B5E28913D12009FA9F5 /* MathsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA46B5D28913D12009FA9F5 /* MathsButtonView.swift */; };
+		2FCB9058289280ED0096E42A /* ISO8211Lib in Frameworks */ = {isa = PBXBuildFile; productRef = 2FCB9057289280ED0096E42A /* ISO8211Lib */; };
+		2FCB905C2893F63F0096E42A /* CatalogView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB905A2893F63F0096E42A /* CatalogView+Observed.swift */; };
+		2FCB905D2893F63F0096E42A /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB905B2893F63F0096E42A /* CatalogView.swift */; };
+		2FCB905F2893F6460096E42A /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB905E2893F6460096E42A /* HomeTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		2FA46B4528912CDD009FA9F5 /* ISO8211LibTesterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8211LibTesterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2FA46B5B2891398C009FA9F5 /* MathsView+Observed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MathsView+Observed.swift"; sourceTree = "<group>"; };
 		2FA46B5D28913D12009FA9F5 /* MathsButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathsButtonView.swift; sourceTree = "<group>"; };
+		2FCB90562892801F0096E42A /* ISO8211Lib */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ISO8211Lib; path = ../ISO8211Lib; sourceTree = "<group>"; };
+		2FCB905A2893F63F0096E42A /* CatalogView+Observed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CatalogView+Observed.swift"; sourceTree = "<group>"; };
+		2FCB905B2893F63F0096E42A /* CatalogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		2FCB905E2893F6460096E42A /* HomeTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F1392E128917DA500E432E8 /* ISO8211Lib in Frameworks */,
+				2FCB9058289280ED0096E42A /* ISO8211Lib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,7 @@
 		2FA46B1B28912CDC009FA9F5 = {
 			isa = PBXGroup;
 			children = (
+				2FCB90562892801F0096E42A /* ISO8211Lib */,
 				2FA46B2628912CDC009FA9F5 /* ISO8211LibTester */,
 				2FA46B3828912CDD009FA9F5 /* ISO8211LibTesterTests */,
 				2FA46B4228912CDD009FA9F5 /* ISO8211LibTesterUITests */,
@@ -139,6 +148,8 @@
 		2FA46B5F2891433C009FA9F5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2FCB905E2893F6460096E42A /* HomeTabView.swift */,
+				2FCB90592893F63F0096E42A /* CatalogView */,
 				2FA46B6028914439009FA9F5 /* MathsView */,
 			);
 			path = Scenes;
@@ -155,12 +166,7 @@
 			sourceTree = "<group>";
 		};
 		2FA46B692891548F009FA9F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
+
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,7 +184,7 @@
 			);
 			name = ISO8211LibTester;
 			packageProductDependencies = (
-				2F1392E028917DA500E432E8 /* ISO8211Lib */,
+				2FCB9057289280ED0096E42A /* ISO8211Lib */,
 			);
 			productName = ISO8211LibTester;
 			productReference = 2FA46B2428912CDC009FA9F5 /* ISO8211LibTester.app */;
@@ -254,7 +260,6 @@
 			);
 			mainGroup = 2FA46B1B28912CDC009FA9F5;
 			packageReferences = (
-				2F1392DF28917DA500E432E8 /* XCRemoteSwiftPackageReference "ISO8211Lib" */,
 			);
 			productRefGroup = 2FA46B2528912CDC009FA9F5 /* Products */;
 			projectDirPath = "";
@@ -299,8 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FA46B5E28913D12009FA9F5 /* MathsButtonView.swift in Sources */,
+				2FCB905C2893F63F0096E42A /* CatalogView+Observed.swift in Sources */,
 				2FA46B5C2891398C009FA9F5 /* MathsView+Observed.swift in Sources */,
 				2FA46B2A28912CDC009FA9F5 /* MathsView.swift in Sources */,
+				2FCB905F2893F6460096E42A /* HomeTabView.swift in Sources */,
+				2FCB905D2893F63F0096E42A /* CatalogView.swift in Sources */,
 				2FA46B2828912CDC009FA9F5 /* ISO8211LibTesterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,22 +660,10 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		2F1392DF28917DA500E432E8 /* XCRemoteSwiftPackageReference "ISO8211Lib" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/chrisvalford/ISO8211Lib";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		2F1392E028917DA500E432E8 /* ISO8211Lib */ = {
+		2FCB9057289280ED0096E42A /* ISO8211Lib */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2F1392DF28917DA500E432E8 /* XCRemoteSwiftPackageReference "ISO8211Lib" */;
+
 			productName = ISO8211Lib;
 		};
 /* End XCSwiftPackageProductDependency section */
